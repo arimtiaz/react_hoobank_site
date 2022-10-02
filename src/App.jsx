@@ -1,12 +1,16 @@
 import React from 'react'
-import styles from './styles'
+import styles from "./style";
+import {Billing, Hero} from './Components'
 
-const App = () => {
-  return (
-    <div className='bg-primary w-full overflow-hidden'>
-      <h1>Hello</h1>
+const App = () => (
+  <div className="bg-primary w-full overflow-hidden">
+    <div>
+      <Billing></Billing>
     </div>
-  )
-}
+    <div>
+      <Hero></Hero>
+    </div>
+  </div>
+);
 
-export default App
+export default App;
